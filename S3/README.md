@@ -1,12 +1,49 @@
+# Part 1
+For below network, calculated the partial derivatives of loss with respect to the weights and plotted the loss for various learning rates.
+
+## Network											
+![image](https://user-images.githubusercontent.com/106446673/212459658-a0141e05-6b46-42e8-98e7-9f5b214ce28d.png)
+
+In the above network
+1. the notations used are:
+```
+w(x) = Weights of i (where x = 1, 2, ... , 8)			out_h(x) = Activated output of i (where x = 1, 2)
+h(x) = Hidden output of i (where x = 1, 2)			out_o(x) = Activated output of i (where x = 1, 2)
+o(x) = Output of i (where x = 1, 2)
+```
+
+2. the inputs are:
+```
+i1 = Input 1			t1 = output1 (Expected output for Input1)			η = Learning Rate
+i2 = Input 2			t2 = output2 (Expected output for Input2)
+```
+
+3. and the loss function L2 is defined as: 
+```
+E1 = (1/2) * (t1 - out_o1)^2
+E2 = (1/2) * (t2 - out_o1)^2
+```
+
+Below is the snapshot of the backpropagation calculation of the above network at ```η=1``` for 50 epochs.	 _[(Workbook)](https://github.com/Sudarshanpune/mnist_nn/blob/main/S3/Backpropagation.xlsx)_
+
+_Note: Please refer the sheet2 for the backpropagation calculations_
+![image](https://user-images.githubusercontent.com/106446673/212454317-0bdc9c29-c810-4570-b86e-db53b3c0fcb7.png)
+
+## Plots
+![image](https://user-images.githubusercontent.com/106446673/212450474-41872747-659e-44a2-9062-c7f67985c983.png) ![image](https://user-images.githubusercontent.com/106446673/212450807-3eb00693-bf8b-4fd0-9bb4-796754f00695.png)
+
+![image](https://user-images.githubusercontent.com/106446673/212450479-11aa1a98-2d63-4a49-ad7b-4a88c3cbde10.png) ![image](https://user-images.githubusercontent.com/106446673/212450442-8927fefc-9b2f-4329-9d9b-67f63bf25989.png)
+
+
 # Part 2
 
 ## Task: 
-Train the [network](https://colab.research.google.com/drive/1AtqGpG8BVhnv7LS08vnG_sdzz3_Rxuzn?usp=sharing), which identifies MNIST images, and achieve the follwing:
+Train the [network](https://colab.research.google.com/drive/1AtqGpG8BVhnv7LS08vnG_sdzz3_Rxuzn?usp=sharing) which identifies MNIST images, and achieve the follwing:
 - 99.4% validation accuracy
 - use less than 20k paramerters and less than 20 epochs
 - usage of batch normalization, droupout, fully connected (FC) layer, global avergae pooling (GAP)
 
-***Solution** - [Notebook](https://github.com/try-external/EVA8/blob/main/S3/EVA8_S3.ipynb) | [Colab link](https://colab.research.google.com/drive/1rhaJuAlLPwSbexikLxytMGGFVvFDGF8H?usp=sharing)*
+***Solution** - [Notebook](https://github.com/Sudarshanpune/mnist_nn/blob/main/S3/EVA8_S3.ipynb) | [Colab link](https://colab.research.google.com/drive/1rhaJuAlLPwSbexikLxytMGGFVvFDGF8H?usp=sharing)*
 
 ## Architecture:
 
@@ -45,7 +82,6 @@ Estimated Total Size (MB): 0.48
 ----------------------------------------------------------------
 
 ```
-
 
 ## Logs:
 
